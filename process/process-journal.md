@@ -89,3 +89,65 @@ So look at the list I think these things:
 ## And so...
 
 Makes sense just to mock these up and see what we see I imagine?
+
+---
+
+# Reporting in on the full draft, single- versus multi-passage, reload?, done? (Wednesday, 26 June 2019, 15:19PM)
+
+Well, I made mock-ups of them all as promised. Here is what happened.
+
+## Sisyphus
+
+I used the basic cycling link. There is no version of the link where the boulder reaches the top as that would create a (kind of) win state, so it's just "nearly there" followed immediately by "rolling down". It's the simplest of all the things I did and it's quite satisfying. Importantly it feels very Twiney. Kind of the ultimate Twiney thing, and a perfect fit here.
+
+I went with very blank and sparse language which I think works fine. I mean, it just kind of works?
+
+Little weird to feel like it might be "done" but who knows, perhaps it is.
+
+Should I be doing the due dilligence of just playing a bunch of Twines to make sure I'm hitting the rough style and approach? Does that even make sense?
+
+## Tantalus
+
+This one was hard because I wanted to be fancy with mouse-overs, but have to acknowledge at the same time that it won't work with mobile. As such the base-line "trick" is that you click on links but they take you to pages where they turn out not to have worked, repeat ad nauseam. If using a mouse-style pointer this also happens on mouse over which is a little more fun and feels more like reaching, though I guess you could think of the movement as a reach and the click as a "grasp", in which case clicking is fine.
+
+I spent a fair bit of time trying to get single-passage versions of this going with text and link replacement and so on, particularly liking the idea of things happening both on mouse over and mouse out. But again, if we're doing mobile that can't work anyway so perhaps not the biggest loss. (Not to mention I couldn't get it going anyway.) I think it's probably only to do with me wanting to flex my (non-existent) technical abilities, so also no loss there.
+
+## Prometheus
+
+I ended up doing this one just with timers and not with any save and load stuff. The save and load is pretty funny, but I suspect it's just more funny for me and not particularly visible on the surface for an actual player. Further, saving and reloading doesn't really register for me as a typical Twine experience kind of a thing, so I don't think there's enough of a hook into the "cultural practice" of Twine?
+
+So the way it went is basically just a circular graph but with the transitions being based on timers. This is nice because the player has no agencies and just sees the cycle happening.
+
+I ended up not implementing struggling because it just doesn't feel like it adds enough, just transforms it toward being more of a kind of systems/simulation experience, which Twine can do, but isn't really the kind of thing I'd say is typical or in its wheelhouse. As such the player does nothing except watch the eagle come and go.
+
+## Danaids
+
+The most systems-y one in a lot of ways (as seen with the text adventure). This is the one I "spent" the circular graph card on, so it's just four passages depicting the filling and emptying of the basin over and over again.
+
+It maybe feels slightly less-than-ideal that two of the five are literal cyclical graphs, but on the other hand that really is the ultimate structure for a hypertext to represent repetition, so maybe it's acceptable. And I get brownie points for having the cycles be implemented differently and with different agencies right?
+
+## Zeno
+
+Relatively pleased that this one manages to "solve" the Zeno-representation problem in a very Twine-y way and also manages to do a single-passage thing (along with Sisyphus). In this case it's using text replacement stuff that allows you to have the agency of "I run" and to have that alter the representation of how far along the track you are. It uses "half of" repeating on itself to create the requisite distance-to-go infinitely which is nice given that halving just stacks neatly.
+
+So I mean... is this thing somewhat... done?
+
+## Single-passage versus multi-passage
+
+I suppose this whole single-passage versus multi-passage thing does give us a particular aspect of Twine to think about. For me it currently feels most like a passage transition is a moment of action and time passing?
+
+Or not? I don't know. Maybe the question is just an open one - what is the weighting and meaning of a textual/link change on the current page versus a transition to another page? What if the new page represents the exact same kind of textual/link change? Then the difference is just a light flicker? (At least with the default Twine passage transition.)
+
+When I think about what I've seen in-page stuff done for (almost always cycling links) it has tended to be a way of altering flavour texts or expanding descriptive elements, so more about "looking" I suppose. Whereas in Sisyphus I'm using it to represent a very active piece of exertion. I think I "get away" with it here just because the cycling link is too good of a joke/play-on-commands in the context of Twine not to use. Anyone who has Twine-d will recognize what's going on and hopefully get a chuckle out of it. Which is part of the point of all this right?
+
+## Reload?
+
+One weird thing I noticed with Twine is that if you do a standard reload in the page (or select the location bar and hit enter) it won't reload back to the front page, which is maybe a little frustrating as it probably means 99% of people who even play will try one and get stuck in it and not bother to look at the others.
+
+I guess I can see if there's a way to alter that behaviour, but I suspect it might be baked in there. And I really don't want to just offer an in-game "reload" as that would be admitting the punishments aren't infinite.
+
+## World's fastest game?
+
+So then have I finished one of these games in basically a day? Perhaps so, I don't think there's so much to agonize over here.
+
+Show it to a person or two and call it a day? Perhaps so.
