@@ -151,3 +151,11 @@ I guess I can see if there's a way to alter that behaviour, but I suspect it mig
 So then have I finished one of these games in basically a day? Perhaps so, I don't think there's so much to agonize over here.
 
 Show it to a person or two and call it a day? Perhaps so.
+
+---
+
+# A little extra note (Wednesday, 26 June 2019, 17:27PM)
+
+Just to say I put the meta tag in for device font size stuff on mobile and it worked fine. All the things seem to be visible in a single screen now which is the ideal. Don't think it needs to be more than that.
+
+May I say, too, that I quite love using the absolutely default CSS for Harlowe. Looks just so much like a... Twine.
