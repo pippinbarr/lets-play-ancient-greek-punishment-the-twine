@@ -1,14 +1,12 @@
 # Let's Play: Ancient Greek Punishment: The Twine
 
-```
-???
-```
+_Hypertext! Hyperpunishment! Click links while your heart sinks! Read texts and repent your defects! Enjoy the Twine! Your soul's on the line!_
 
 #### [Play the current build of _Let's Play: Ancient Greek Punishment: The Twine_](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-the-twine)
 
 ---
 
-_Let's Play: Ancient Greek Punishment: The Twine_ is yet another new edition in the _Let's Play: Ancient Greek Punishment_ series, each focusing on a retelling of five (kind of) mythological punishments. In _The Twine_ the game is retold in the form of a Twine story.
+_Let's Play: Ancient Greek Punishment: The Twine_ is yet another new edition in the _Let's Play: Ancient Greek Punishment_ series, each focusing on a retelling of five (kind of) mythological punishments. In _The Twine_ the game is retold in the form of a Twine (hypertext) story.
 
 
 #### Read the [Press kit](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-the-twine/blob/master/press/README.md) for press information
