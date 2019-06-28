@@ -20,28 +20,23 @@ tw-sidebar {
 	display: none;
 }
 
-
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
-
 
 </script><tw-passagedata pid="1" name="Menu" tags="" position="723,18" size="100,100">LET&#39;S PLAY: ANCIENT GREEK PUNISHMENT: THE TWINE!
 
-[[I. SISYPHUS-&gt;Sisyphus Start]]
+[[SISYPHUS-&gt;Sisyphus Start]]
 
-[[II. TANTALUS-&gt;Tantalus Start]]
+[[TANTALUS-&gt;Tantalus Start]]
 
-[[III. PROMETHEUS-&gt;Prometheus Start]]
+[[PROMETHEUS-&gt;Prometheus Start]]
 
-[[IV. DANAIDS-&gt;Danaids Start]]
+[[DANAIDS-&gt;Danaids Start]]
 
-[[V. ZENO-&gt;Zeno Start]]
+[[ZENO-&gt;Zeno Start]]
 
-(set: $prometheus_delay to 3000)</tw-passagedata><tw-passagedata pid="2" name="Sisyphus Start" tags="" position="193,163" size="100,100">i. Sisyphus
+(set: $prometheus_delay to 3000)</tw-passagedata><tw-passagedata pid="2" name="Sisyphus Start" tags="" position="193,163" size="100,100">A grey boulder on a grey hill under a grey sky.
 
-A grey boulder on a grey hill under a grey sky.
-
-(cycling-link: &quot;The boulder is at the bottom of the hill&quot;,&quot;The boulder is a short way up the hill.&quot;,&quot;The boulder is half-way up the hill&quot;,&quot;The boulder is almost at the top of the hill&quot;,&quot;The boulder is rolling back down the hill.&quot;)</tw-passagedata><tw-passagedata pid="3" name="Tantalus Start" tags="" position="429,157" size="100,100">ii. Tantalus
-
+(cycling-link: &quot;The boulder is at the bottom of the hill&quot;,&quot;The boulder is a short way up the hill.&quot;,&quot;The boulder is half-way up the hill&quot;,&quot;The boulder is almost at the top of the hill&quot;,&quot;The boulder is rolling back down the hill.&quot;)</tw-passagedata><tw-passagedata pid="3" name="Tantalus Start" tags="" position="429,157" size="100,100">
 A gnarled apple tree spreads its branches over a limpid pool.
 
 (either: &quot;You are hungry.&quot;, &quot;You are thirsty.&quot;)
@@ -51,22 +46,15 @@ A single, perfect (hook:&quot;applehook&quot;)[[[apple-&gt;Eat apple]]] hangs fr
 (mouseover-goto: ?applehook,&quot;Eat apple&quot;)
 (mouseover-goto: ?waterhook,&quot;Drink water&quot;)
 (click-goto: ?applehook,&quot;Ate apple&quot;)
-(click-goto: ?waterhook,&quot;Drank water&quot;)</tw-passagedata><tw-passagedata pid="4" name="Prometheus Start" tags="" position="670,186" size="100,100">iii. Prometheus
+(click-goto: ?waterhook,&quot;Drank water&quot;)</tw-passagedata><tw-passagedata pid="4" name="Prometheus Start" tags="" position="670,186" size="100,100">Grey sky. A jagged black rock with chains attaching you to it.
 
-Grey sky. A jagged black rock with chains attaching you to it.
+(event: when time &gt; $prometheus_delay)[(goto: &quot;An eagle appears&quot;)]</tw-passagedata><tw-passagedata pid="5" name="Danaids Start" tags="" position="932,171" size="100,100">A fountain pouring forth clear water. A basin in need of filling. A jug to fill it with.
 
-(event: when time &gt; $prometheus_delay)[(goto: &quot;An eagle appears&quot;)]</tw-passagedata><tw-passagedata pid="5" name="Danaids Start" tags="" position="932,171" size="100,100">iv. Danaids
-
-A fountain pouring forth clear water. A basin in need of filling. A jug to fill it with.
-
-[[I fill the jug with water.-&gt;Pour water]]</tw-passagedata><tw-passagedata pid="6" name="Zeno Start" tags="" position="1195,176" size="100,100">v. Zeno
-
-A race-track. A race to run.
+[[I fill the jug with water.-&gt;Pour water]]</tw-passagedata><tw-passagedata pid="6" name="Zeno Start" tags="" position="1195,176" size="100,100">A race-track. A race to run.
 
 (hook:&quot;full&quot;)[The entire](hook: &quot;distance&quot;)[](hook:&quot;definite&quot;)[] track remains ahead.
 
-(link-replace:&quot;I run half-way down the remaining track.&quot;)[(replace: ?definite)[the](replace:?full)[Half of ](link-repeat: &quot;I run half-way down the remaining track.&quot;)[(append: ?distance)[half of ]]]</tw-passagedata><tw-passagedata pid="7" name="Eat apple" tags="" position="334,302" size="100,100">ii. Tantalus
-
+(link-replace:&quot;I run half-way down the remaining track.&quot;)[(replace: ?definite)[the](replace:?full)[Half of ](link-repeat: &quot;I run half-way down the remaining track.&quot;)[(append: ?distance)[half of ]]]</tw-passagedata><tw-passagedata pid="7" name="Eat apple" tags="" position="334,302" size="100,100">
 A gnarled apple tree spreads its branches over a limpid pool.
 
 (either: &quot;You are hungry.&quot;, &quot;You are thirsty.&quot;)
@@ -74,8 +62,7 @@ A gnarled apple tree spreads its branches over a limpid pool.
 A single, perfect apple hangs from a branch just out of reach. The (hook: &quot;waterhook&quot;)[[[water-&gt;Drink water]]] in the pool looks cool and delicious.
 
 (mouseover-goto: ?waterhook, &quot;Drink water&quot;)
-(click-goto: ?waterhook,&quot;Drank water&quot;)</tw-passagedata><tw-passagedata pid="8" name="Drink water" tags="" position="501,298" size="100,100">ii. Tantalus
-
+(click-goto: ?waterhook,&quot;Drank water&quot;)</tw-passagedata><tw-passagedata pid="8" name="Drink water" tags="" position="501,298" size="100,100">
 A gnarled apple tree spreads its branches over a limpid pool.
 
 (either: &quot;You are hungry.&quot;, &quot;You are thirsty.&quot;)
@@ -84,49 +71,27 @@ A single, perfect (hook:&quot;applehook&quot;)[[[apple-&gt;Eat apple]]] hangs fr
 
 (mouseover-goto: ?applehook, &quot;Eat apple&quot;)
 (click-goto: ?applehook,&quot;Ate apple&quot;)
-</tw-passagedata><tw-passagedata pid="9" name="Ate apple" tags="" position="330,422" size="100,100">ii. Tantalus
+</tw-passagedata><tw-passagedata pid="9" name="Ate apple" tags="" position="330,422" size="100,100">A gnarled apple tree spreads its branches over a limpid pool.
 
-A gnarled apple tree spreads its branches over a limpid pool.
+Somehow, breaking the implementation of the game, you eat the apple. Good for you. Guess you&#39;re not hungry any more.</tw-passagedata><tw-passagedata pid="10" name="Drank water" tags="" position="502,419" size="100,100">A gnarled apple tree spreads its branches over a limpid pool.
 
-Somehow, breaking the implementation of the game, you eat the apple. Good for you. Guess you&#39;re not hungry any more.</tw-passagedata><tw-passagedata pid="10" name="Drank water" tags="" position="502,419" size="100,100">ii. Tantalus
+Somehow, breaking the implementation of the game, you drink some water. Good for you. Guess you&#39;re not thirsty any more.</tw-passagedata><tw-passagedata pid="11" name="Pour water" tags="" position="1022,315" size="100,100">A fountain pouring forth clear water. A basin in need of filling. A jug to fill it with.
 
-A gnarled apple tree spreads its branches over a limpid pool.
+[[I pour the water from the jug into the basin.-&gt;Basin empties]]</tw-passagedata><tw-passagedata pid="12" name="Basin empties" tags="" position="831,314" size="100,100">A fountain pouring forth clear water. A basin with a jugful of water in it.
 
-Somehow, breaking the implementation of the game, you drink some water. Good for you. Guess you&#39;re not thirsty any more.</tw-passagedata><tw-passagedata pid="11" name="Pour water" tags="" position="1022,315" size="100,100">iv. Danaids
+[[I watch the water empty from the basin through the holes in its base.-&gt;Danaids Start]]</tw-passagedata><tw-passagedata pid="13" name="An eagle appears" tags="" position="669,300" size="100,100">Grey sky. A jagged black rock with chains attaching you to it. A black dot on the horizon.
 
-A fountain pouring forth clear water. A basin in need of filling. A jug to fill it with.
+(event: when time &gt; $prometheus_delay)[(goto: &quot;An eagle nears&quot;)]</tw-passagedata><tw-passagedata pid="14" name="An eagle nears" tags="" position="670,403" size="100,100">Grey sky. A jagged black rock with chains attaching you to it. An eagle draws near.
 
-[[I pour the water from the jug into the basin.-&gt;Basin empties]]</tw-passagedata><tw-passagedata pid="12" name="Basin empties" tags="" position="831,314" size="100,100">iv. Danaids
+(event: when time &gt; $prometheus_delay)[(goto: &quot;An eagle above&quot;)]</tw-passagedata><tw-passagedata pid="15" name="An eagle above" tags="" position="670,511" size="100,100">Grey sky. A jagged black rock with chains attaching you to it. An eagle above you.
 
-A fountain pouring forth clear water. A basin with a jugful of water in it.
+(event: when time &gt; $prometheus_delay)[(goto: &quot;An eagle lands&quot;)]</tw-passagedata><tw-passagedata pid="16" name="An eagle lands" tags="" position="670,619" size="100,100">Grey sky. A jagged black rock with chains attaching you to it. An eagle beside you.
 
-[[I watch the water empty from the basin through the holes in its base.-&gt;Danaids Start]]</tw-passagedata><tw-passagedata pid="13" name="An eagle appears" tags="" position="669,300" size="100,100">iii. Prometheus
+(event: when time &gt; $prometheus_delay)[(goto: &quot;An eagle eats&quot;)]</tw-passagedata><tw-passagedata pid="17" name="An eagle eats" tags="" position="670,727" size="100,100">Grey sky. A jagged black rock with chains attaching you to it. An eagle eating your liver.
 
-Grey sky. A jagged black rock with chains attaching you to it. A black dot on the horizon.
+(event: when time &gt; $prometheus_delay)[(goto: &quot;An eagle leaves&quot;)]</tw-passagedata><tw-passagedata pid="18" name="An eagle leaves" tags="" position="667,836" size="100,100">Grey sky. A jagged black rock with chains attaching you to it. An eagle flying away.
 
-(event: when time &gt; $prometheus_delay)[(goto: &quot;An eagle nears&quot;)]</tw-passagedata><tw-passagedata pid="14" name="An eagle nears" tags="" position="670,403" size="100,100">iii. Prometheus
-
-Grey sky. A jagged black rock with chains attaching you to it. An eagle draws near.
-
-(event: when time &gt; $prometheus_delay)[(goto: &quot;An eagle above&quot;)]</tw-passagedata><tw-passagedata pid="15" name="An eagle above" tags="" position="670,511" size="100,100">iii. Prometheus
-
-Grey sky. A jagged black rock with chains attaching you to it. An eagle above you.
-
-(event: when time &gt; $prometheus_delay)[(goto: &quot;An eagle lands&quot;)]</tw-passagedata><tw-passagedata pid="16" name="An eagle lands" tags="" position="670,619" size="100,100">iii. Prometheus
-
-Grey sky. A jagged black rock with chains attaching you to it. An eagle beside you.
-
-(event: when time &gt; $prometheus_delay)[(goto: &quot;An eagle eats&quot;)]</tw-passagedata><tw-passagedata pid="17" name="An eagle eats" tags="" position="670,727" size="100,100">iii. Prometheus
-
-Grey sky. A jagged black rock with chains attaching you to it. An eagle eating your liver.
-
-(event: when time &gt; $prometheus_delay)[(goto: &quot;An eagle leaves&quot;)]</tw-passagedata><tw-passagedata pid="18" name="An eagle leaves" tags="" position="667,836" size="100,100">iii. Prometheus
-
-Grey sky. A jagged black rock with chains attaching you to it. An eagle flying away.
-
-(event: when time &gt; $prometheus_delay)[(goto: &quot;Night falls&quot;)]</tw-passagedata><tw-passagedata pid="19" name="Night falls" tags="" position="668,944" size="100,100">iii. Prometheus
-
-Black night. A jagged black rock with chains attaching you to it.
+(event: when time &gt; $prometheus_delay)[(goto: &quot;Night falls&quot;)]</tw-passagedata><tw-passagedata pid="19" name="Night falls" tags="" position="668,944" size="100,100">Black night. A jagged black rock with chains attaching you to it.
 
 (event: when time &gt; $prometheus_delay)[(goto: &quot;Prometheus Start&quot;)]</tw-passagedata></tw-storydata>
 
