@@ -159,3 +159,21 @@ Show it to a person or two and call it a day? Perhaps so.
 Just to say I put the meta tag in for device font size stuff on mobile and it worked fine. All the things seem to be visible in a single screen now which is the ideal. Don't think it needs to be more than that.
 
 May I say, too, that I quite love using the absolutely default CSS for Harlowe. Looks just so much like a... Twine.
+
+---
+
+# Blues, reversion (Friday, 28 June 2019, 9:51AM)
+
+Jim and Mary took a look at the game overnight and I ended up feeling pretty dispirited by the feedback - through no fault of theirs, just that it showed kind of confusion and a lack of impact. See the [testing](./testing.md) documentation for their responses.
+
+The big take-away for me was Mary's point around the experience not really _feeling_ like anything, and this tapped into my fear of precisely that. As such, I initially reacted to the feedback by getting down about it and thinking it's just a bad piece of work, which is obviously an overreaction, but that's how these things go right? Right, dear diary? In reaction I also made a specific change suggested by Mary (numbering the minigames) as a sort of way to assuage the feeling by just _doing something_.
+
+However, in revisiting the game and in conversation with Rilla I've managed to recover my good humour about it. And specifically I think a helpful thing about Mary's response (which I wrote to her about) is that she's really identifying (for me) something about Twine's more generally. Maybe it's a lack of imagination on my part, but I do find the base-level agency of clicking links (and reading the reaction) pretty flaccid and uneventful. To me, that's sort of a part of what a Twine is like, a very flat literary experience. (Part of it in the case of the punishment games, though, is also the intentional spareness of the text, but I don't think that accounts for much of the lackluster experience, could be wrong.) And I don't even think it's a bad thing, it's just a particular kind of affect that one can achieve in that particular medium, it's very distancing and cold, and that can be a very interesting standpoint to have on a particular fictional world. (To some reasonable extent I think that Burnt Matches does a good job on this front - the neutrality of the medium plays well with the emptiness and post-apocalyptic stillness of the setting in that game.)
+
+And then beyond this affective layer, I think that this Twine version is worthwhile for just the reasons I've been discussing throughout this process: it's an engagement with Twine as a platform for expression, using a kind of "control variable" in the form of the punishment stories/interactions. And as per the discussion above, there's stuff to say about how the affordances and technical nature of Twine play into that. And then there's the kind of cultural layer as well. And then there's the affective layer that worried me above. So there's plenty of value.
+
+How much of that value is "visible" to a generic player I don't know. I think that you'd have to be someone who at least knows about Twine and has played other Twine's to get a sense of how this game fits into that tradition. And then ideally I'd want/need that player to also have a sense of the larger project going on here in terms of the repeated "remediation" of the punishment game itself and what that tells you about how the present game was constrained and constructed.
+
+So anyway, I'm okay again, thanks for listening.
+
+I symbolically reverted the numbering system I'd added as a bandaid solution, too.
