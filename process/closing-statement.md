@@ -1,10 +1,27 @@
 # XYZ
 
-Structure?
-- There's not much in way of commits to bother with
-- Showing code might be nice here (at least to convey complexity)
-- Obviously showing graph structures can be nice
-- Maybe identify thematic areas of interest and then expand on a per-game basis in this case? I think it's a simple structure that might work (in chess edition I did this but with cute thematising headers which I think can probably work here...? Especially if each game is maybe more emblematic than others? Tried to identify below with asterisks)
+(Note: throughout this text, I’ll be linking to [process materials](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-the-twine/blob/master/process/README.md) generated as part of the project in its [code repository](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-the-twine). This approach to process documentation is part of the [Games as Research](https://www.gamesasresearch.com/) project.)
+
+[_Let's Play: Ancient Greek Punishment: The Twine_](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-the-twine) is the ninth edition in the "Ancient Greek Punishment" series I've been working on since 2011. Lately I've been interested in what happens when I retell the five mythological punishments using the "language" of different game engines, and this time around the game engine in question is Twine, an easy-to-use and highly accessible tool for creating hypertext stories.
+
+Each of the myths has the character of being an infinite punishment scenario, the most famous probably being Sisyphus, doomed to push a boulder up a hill only to see it roll back down over and over again. Twine has its own character as a game/story creation tool, in terms of everything from its default stylesheet, to its underlying coding language of "macros", to the typical ways the Twine community uses Twine's features to create their stories. I'm always interested in the intersection between design and the technology in use, so in the following, I want to look particularly at each specific myth and how it interacts with the capacities of Twine through my own design decisions.
+
+## Sisyphus's Cyclical Situation
+
+I'm not 100% sure why, but I view the "[cycling link](https://twinery.org/wiki/harlowe:cycling-link)" as the emblematic storytelling technique in Twine stories. It's often used in stories in a couple of ways, but perhaps most interestingly as a way to create agency for the reader in determining the actual description of a scene. By cycling through the possibilities of the link, they can set a particular descriptive passage the way they like it, perhaps making a vase contain peonies instead of roses, say.
+
+In planning to make these punishment games in Twine, it was immediately obvious to me that the _cycling_ part of the cycling link would be a great affordance to leverage - after you've seen all the possibilities of the link, it goes back to the first and continues on. As such, it's ideal for representing an endlessly repeating set of options, or in this case _actions_. So Sisyphus's pushing of the boulder is encoded as a cycling link - each advance of the link gets the boulder further up the hill, until the final option sends it rolling back to the bottom, leaving the player back where they started. The code looks like this:
+
+![](images/sisyphus-code.png)
+The Twine code for the cycling link in Sisyphus
+
+Something that interests me here and elsewhere in the game is the physicality that you can interpret as part of the interaction here. Each click on the link (or touch on a mobile device) represents a literal _push_ of the boulder in the story - the player exerts effort, however minimal, to advance the text and the boulder itself, the text _is_ the boulder, the cycling link _is_ Sisyphean.
+
+## Reaching as reaching
+
+- 
+
+---
 
 Possible themes
 - Agency
@@ -14,13 +31,6 @@ Possible themes
 - Writing style and pithiness
 - A "typical twine"
 - Cycles and infinite accumulations
-
-Per game
-- Sisyphus
-  - Click as push
-  - Click as effort
-  - Cycling link as emblematic of Twine*
-  -
 
 - Tantalus
   - Mouse/finger movement as reaching, clicking as grasping*
