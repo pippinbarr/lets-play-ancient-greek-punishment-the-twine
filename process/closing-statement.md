@@ -6,7 +6,7 @@
 
 Each of the myths has the character of being an infinite punishment scenario, the most famous probably being Sisyphus, doomed to push a boulder up a hill only to see it roll back down over and over again. Twine has its own character as a game/story creation tool, in terms of everything from its default stylesheet, to its underlying coding language of "macros", to the typical ways the Twine community uses Twine's features to create their stories. I'm always interested in the intersection between design and the technology in use, so in the following, I want to look particularly at each specific myth and how it interacts with the capacities of Twine through my own design decisions.
 
-## Sisyphus's Cyclical Situation
+## Sisyphus's cyclical situation
 
 I'm not 100% sure why, but I view the "[cycling link](https://twinery.org/wiki/harlowe:cycling-link)" as the emblematic storytelling technique in Twine stories. It's often used in stories in a couple of ways, but perhaps most interestingly as a way to create agency for the reader in determining the actual description of a scene. By cycling through the possibilities of the link, they can set a particular descriptive passage the way they like it, perhaps making a vase contain peonies instead of roses, say.
 
@@ -17,9 +17,21 @@ The Twine code for the cycling link in Sisyphus
 
 Something that interests me here and elsewhere in the game is the physicality that you can interpret as part of the interaction here. Each click on the link (or touch on a mobile device) represents a literal _push_ of the boulder in the story - the player exerts effort, however minimal, to advance the text and the boulder itself, the text _is_ the boulder, the cycling link _is_ Sisyphean.
 
-## Reaching as reaching
+## The apple of your eyes only
 
-- 
+
+
+## The role of the Promethean reader
+
+Eco and role of the reader, open and closed texts
+
+## Patterns of hypertext bathwater
+
+[Patterns of Hypertext](https://www.eastgate.com/patterns/Patterns.html) [Cycle](https://www.eastgate.com/patterns/Patterns3.html)
+
+
+## Additive infinity and immobility
+
 
 ---
 
@@ -55,6 +67,7 @@ Possible themes
 
 - Zeno
   - Additive infinity*
+  - Flawed in terms of an inevitable overflow? Is there one? Is there a string limit? A webpage limit? The fact I don't know is the problem?
   - Most complex code underlying it
   - Still premised on a specific macro, but significantly more fiddly
   - (Maybe it's worth showing the code for each?)
