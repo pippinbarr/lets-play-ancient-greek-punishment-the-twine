@@ -4,13 +4,13 @@
 
 [_Let's Play: Ancient Greek Punishment: The Twine_](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-the-twine) is the ninth edition in the "Ancient Greek Punishment" series I've been working on since 2011. Lately I've been interested in what happens when I retell the five mythological punishments using the "language" of different game engines, and this time around the game engine in question is Twine, an easy-to-use and highly accessible tool for creating hypertext stories.
 
-Each of the myths has the character of being an infinite punishment scenario, the most famous probably being Sisyphus, doomed to push a boulder up a hill only to see it roll back down over and over again. Twine has its own character as a game/story creation tool, in terms of everything from its default stylesheet, to its underlying coding language of "macros", to the typical ways the Twine community uses Twine's features to create their stories. I'm always interested in the intersection between design and the technology in use, so in the following, I want to look particularly at each specific myth and how it interacts with the capacities of Twine through my own design decisions.
+Each of the myths has the character of being an infinite punishment scenario, the most famous probably being Sisyphus, doomed to push a boulder up a hill only to see it roll back down over and over again. Twine has its own character as a game/story creation tool, in terms of everything from its default stylesheet, to its [underlying coding language of "macros"](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-the-twine/blob/master/process/process-journal.md#twine-affordances), to the [typical ways the Twine community uses Twine's features](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-the-twine/blob/master/process/process-journal.md#big-question-style-versus-substance) to create their stories. I'm always interested in the intersection between design and the technology in use, so in the following, I want to look particularly at each specific myth and how it interacts with the capacities of Twine through my own design decisions.
 
 ## Sisyphus's cyclical situation
 
 I'm not 100% sure why, but I view the "[cycling link](https://twinery.org/wiki/harlowe:cycling-link)" as the emblematic storytelling technique in Twine stories. It's often used in stories in a couple of ways, but perhaps most interestingly as a way to create agency for the reader in determining the actual description of a scene. By cycling through the possibilities of the link, they can set a particular descriptive passage the way they like it, perhaps making a vase contain peonies instead of roses, say.
 
-In planning to make these punishment games in Twine, it was immediately obvious to me that the _cycling_ part of the cycling link would be a great affordance to leverage - after you've seen all the possibilities of the link, it goes back to the first and continues on. As such, it's ideal for representing an endlessly repeating set of options, or in this case _actions_. So Sisyphus's pushing of the boulder is encoded as a cycling link - each advance of the link gets the boulder further up the hill, until the final option sends it rolling back to the bottom, leaving the player back where they started. The code looks like this:
+In planning to make these punishment games in Twine, it was immediately obvious to me that the _cycling_ part of the cycling link would be a great affordance to leverage - after you've seen all the possibilities of the link, it goes back to the first and continues on. As such, it's ideal for representing an endlessly repeating set of options, or in this case _actions_. So Sisyphus's pushing of the boulder is [encoded as a cycling link](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-the-twine/blob/master/process/process-journal.md#sisyphus-1) - each advance of the link gets the boulder further up the hill, until the final option sends it rolling back to the bottom, leaving the player back where they started. The code looks like this:
 
 ![](images/sisyphus-code.png)
 The Twine code for the cycling link in Sisyphus
@@ -20,7 +20,6 @@ Something that interests me here and elsewhere in the game is the physicality th
 ![](images/sisyphus-text.png)
 Almost at the top of the hill...
 
-
 ## The apple of your eyes only
 
 Continuing with this idea of physicality, in Tantalus I went with the key action of "reaching" as features in the story. Tantalus is perpetually reaching upward for a piece of fruit or downward for water, but it always thwarted when it moves away. It's another cycle in the sense of reaching, failing, reaching again, and so on, and so the graph of the story is tight loop of two alternating passages, depending on whether you've reached for the apple or the water:
@@ -28,7 +27,7 @@ Continuing with this idea of physicality, in Tantalus I went with the key action
 ![](images/tantalus-graph.png)  
 No escape from the Tantalus graph
 
-In representing this activity using Twine's affordance, I was taken particularly by the idea of mouseovers on links that would deactivate them, followed by their reactivation on mouse out. I spent a decent amount of time trying to get this work, but the nature of the associated Twine code seemed to make it impossible to have this occur within a single page. Instead, I needed to create separate pages ("passages" in Twine) that would be reached on mouse over, with the appropriate link inactive on that page.
+In representing this activity using Twine's affordance, I was taken particularly by the idea of mouseovers on links that would deactivate them, followed by their reactivation on mouse out. I spent a [decent amount of time trying to get this work](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-the-twine/blob/master/process/process-journal.md#tantalus-1), but the nature of the associated Twine code seemed to make it impossible to have this occur [within a single page](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-the-twine/blob/master/process/process-journal.md#single-passage-versus-multi-passage). Instead, I needed to create separate pages ("passages" in Twine) that would be reached on mouse over, with the appropriate link inactive on that page.
 
 ![](images/tantalus-apple-before.png)  
 Before "reaching" for the apple
@@ -62,7 +61,7 @@ The Danaids' punishment as a cyclical graph
 
 In fact, this is a real classic of hypertext design write large, appearing as [one of the key patterns](https://www.eastgate.com/patterns/Patterns3.html) in the canonical article on the subject [Patterns of Hypertext](https://www.eastgate.com/patterns/Patterns.html) by Mark Bernstein. Unsurprisingly, this was the very first structural affordance of Twine I thought of when I started to tackle this game and I even "saved it" to be applied to whichever of the myths seemed most resistant to other techniques (one of my goals was to avoid exact repetition of any one Twine tool).
 
-One unfortunate side effect of using what feels like such a "literary" hypertext approach is that I think it really does lose any real sense of physicality and is much more in the vein of "select an action/path and see the result", a more typical/conventional experience. It's an ironic truth, I think, that a link that describes an action ends up being nothing like performing that action. It becomes entirely the role of the reader to imagine it.
+One unfortunate side effect of using what feels like such a "literary" hypertext approach is that I think it really does lose any real sense of physicality and is much more in the vein of "select an action/path and see the result", a more typical/conventional experience. It's an ironic truth, I think, that [a link that describes an action ends up being nothing like performing that action](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-the-twine/blob/master/process/process-journal.md#blues-reversion-friday-28-june-2019-951am). It becomes entirely the role of the reader to imagine it.
 
 ![](images/danaids-text.png)  
 Fetching water in Danaids
